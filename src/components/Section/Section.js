@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import "./Section.css";
-import "./slick.css";
-import $ from "jquery";
+import "./SectionJquery.js";
 
 function Section() {
 
@@ -88,7 +89,7 @@ function Section() {
                                 </a>
                             </div>
                             <div className="part2_art2">
-                                <a href="" className="part2_img"><img src="./img/article5_img3.jpg" alt="" /></a>
+                                <a href="" className="part2_img"><img src="./img/article5_img3.jpg" alt="" /><i class="fas fa-search"></i></a>
                                 <a href="" className="part2_txt">
                                     <div className="part2_info">
                                         <p className="info1">치앙마이 5일 #코끼리와의 하루 #5성급호텔 #5대특식</p>
@@ -107,40 +108,50 @@ function Section() {
                     <h3>고객님만을 위한 추천여행</h3>
                     <ul className="bannerUl cf">
                         <li>
-                            <a href="#" className="bannerImg1">
-                                <strong>다 낭 </strong>
+                            <div className="bannerImg bannerImg1">
                                 <img src="./img/main_banner_img1.jpg" alt="" />
-                            </a>
+                                <div class="zoom">
+                                    <a href="#"><FontAwesomeIcon icon={faMagnifyingGlass} /></a>
+                                </div>
+                            </div>
                         </li>
                         <li>
-                            <a href="#" className="bannerImg2">
-                                <strong>발 리</strong>
+                            <div className="bannerImg bannerImg2">
                                 <img src="./img/main_banner_img2.jpg" alt="" />
-                            </a>
+                                <div class="zoom">
+                                    <a href="#"><FontAwesomeIcon icon={faMagnifyingGlass} /></a>
+                                </div>
+                            </div>
                         </li>
                         <li>
-                            <a href="#" className="bannerImg3">
-                                <strong>오 사 카</strong>
+                            <div className="bannerImg bannerImg3">
                                 <img src="./img/main_banner_img3.jpg" alt="" />
-                            </a>
+                                <div class="zoom">
+                                    <a href="#"><FontAwesomeIcon icon={faMagnifyingGlass} /></a>
+                                </div>
+                            </div>
                         </li>
                         <li>
-                            <a href="#" className="bannerImg4">
-                                <strong>튀 르 키 에(터키)</strong>
+                            <div className="bannerImg bannerImg4">
                                 <img src="./img/main_banner_img4.jpg" alt="" />
-                            </a>
+                                <div class="zoom">
+                                    <a href="#"><FontAwesomeIcon icon={faMagnifyingGlass} /></a>
+                                </div>
+                            </div>
                         </li>
                         <li>
-                            <a href="#" className="bannerImg5">
-                                <strong>괌</strong>
+                            <div className="bannerImg bannerImg5">
                                 <img src="./img/main_banner_img5.jpg" alt="" />
-                            </a>
+                                <div class="zoom">
+                                    <a href="#"><FontAwesomeIcon icon={faMagnifyingGlass} /></a>
+                                </div>
+                            </div>
                         </li>
                     </ul>
                 </div>
             </article>
 
-            <article className="article7">
+            <article className="article7">  
                 <div className="box">
                     <h2>떠나자, 하나만 믿고! 🛫</h2>
                     <div>
