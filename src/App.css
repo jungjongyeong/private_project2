@@ -26,6 +26,18 @@ ol, ul { list-style: none; }
 
 
 
+.App {
+    text-align: center;
+    background-color: #c1d3f4;
+    min-height:100vh;
+  
+  }
+  .divdivdiv {
+    height:100vw;
+    background-color: orange;
+  }
+
+
 
 
 

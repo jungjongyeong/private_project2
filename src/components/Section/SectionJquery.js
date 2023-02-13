@@ -19,10 +19,10 @@ $(function () {
 
         $('body').append(`<div class="modal">
                             <div class="imgbox">
-                                <iframe width="700" height="505" src="https://www.youtube.com/embed/mTqOy5-HnbE?&autoplay=1"  
-                                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
-                                    clipboard-write; encrypted-media; gyroscope; picture-in-picture; 
-                                    web-share" allowfullscreen></iframe>
+                            <iframe width="700" height="505" src="https://www.youtube.com/embed/RF7jJtTgyfU?&autoplay=1"
+                             title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
+                              clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                               allowfullscreen></iframe>
                                     <button type="button">닫기</button>
                             </div>
                         </div>`)
@@ -33,10 +33,10 @@ $(function () {
 
         $('body').append(`<div class="modal">
                             <div class="imgbox">
-                                <iframe width="700" height="505" src="https://www.youtube.com/embed/mTqOy5-HnbE?&autoplay=1"  
-                                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
-                                    clipboard-write; encrypted-media; gyroscope; picture-in-picture; 
-                                    web-share" allowfullscreen></iframe>
+                            <iframe width="700" height="505" src="https://www.youtube.com/embed/hssWjNcF8Jo?&autoplay=1"
+                             title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+                              encrypted-media; gyroscope; picture-in-picture; web-share" 
+                              allowfullscreen></iframe>
                                     <button type="button">닫기</button>
                             </div>
                         </div>`)
@@ -47,10 +47,10 @@ $(function () {
 
         $('body').append(`<div class="modal">
                             <div class="imgbox">
-                                <iframe width="700" height="505" src="https://www.youtube.com/embed/mTqOy5-HnbE?&autoplay=1"  
-                                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
-                                    clipboard-write; encrypted-media; gyroscope; picture-in-picture; 
-                                    web-share" allowfullscreen></iframe>
+                            <iframe width="700" height="505" src="https://www.youtube.com/embed/iUP_ynB70oM?&autoplay=1"
+                             title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
+                              clipboard-write; encrypted-media; gyroscope; picture-in-picture;
+                               web-share" allowfullscreen></iframe>
                                     <button type="button">닫기</button>
                             </div>
                         </div>`)
@@ -61,10 +61,10 @@ $(function () {
 
         $('body').append(`<div class="modal">
                             <div class="imgbox">
-                                <iframe width="700" height="505" src="https://www.youtube.com/embed/mTqOy5-HnbE?&autoplay=1"  
-                                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
-                                    clipboard-write; encrypted-media; gyroscope; picture-in-picture; 
-                                    web-share" allowfullscreen></iframe>
+                            <iframe width="700" height="505" src="https://www.youtube.com/embed/DGI8XEn5FxU?&autoplay=1"
+                             title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
+                              clipboard-write; encrypted-media; gyroscope; picture-in-picture;
+                               web-share" allowfullscreen></iframe>
                                     <button type="button">닫기</button>
                             </div>
                         </div>`)
@@ -103,6 +103,7 @@ $(function () {
     // 모달창의 닫기 버튼 클릭하면 모달창 닫게 하기
     $('body').on('click', '.modal button, .modal', function () {
         $('.modal').hide()
+        $(".imgbox").empty();
     })
 
     // 모달창의 링크걸린 이미지를 클릭했을때 모달창 닫히는것 막기

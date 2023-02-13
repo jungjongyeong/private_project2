@@ -1,10 +1,20 @@
 import React, { useEffect, useState } from "react";
+import Slider from "react-slick";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import "./Section.css";
 import "./SectionJquery.js";
 
 function Section() {
+
+    const settings = {
+        dots: false,  // 점은 안 보이게
+        infinite: true, // 무한으로 즐기게
+        speed: 500,
+        slidesToShow: 4, //4장씩 보이게 해주세요
+        slidesToScroll: 1, //1장씩 넘어가세요
+
+    };
 
     return (
         <section id="section">
@@ -60,7 +70,7 @@ function Section() {
             </article>
 
             <article className="article5">
-                <div className="slide-group5">
+                <div className="slide-group5" {...settings}>
                     <div className="slide slide1">
                         <div className="part1">
                             <a href=""><img src="./img/article5_img1.jpg" alt="" /></a>
@@ -100,7 +110,6 @@ function Section() {
                             </div>
                         </div>
                     </div>
-
                 </div>
             </article>
             <article className="article6">
@@ -151,7 +160,7 @@ function Section() {
                 </div>
             </article>
 
-            <article className="article7">  
+            <article className="article7">
                 <div className="box">
                     <h2>떠나자, 하나만 믿고! 🛫</h2>
                     <div>

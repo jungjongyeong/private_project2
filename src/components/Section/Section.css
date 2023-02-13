@@ -118,10 +118,10 @@ input[type="text"], input[type="number"] { width: 150px; height: 38px; padding: 
 .article6 { width:100%; padding:100px 0; } 
 .article6 > div { width:100%; margin:0 auto; } 
 .article6 h3 { padding:0 0 100px; font-size: 35px; font-weight: 500; } 
-.bannerUl { overflow: hidden; } 
-.bannerUl li { float:left; width:20%; transform:scale(1); } 
-.bannerUl li ~ li { padding-left:15px;}
-.bannerUl li div.bannerImg { position:relative; overflow:hidden; } 
+.bannerUl { overflow: hidden; max-width:100%; margin:0 auto; text-align: center;} 
+.bannerUl li { float:left;  width:20%; transform:scale(1);  } 
+.bannerUl li {}
+.bannerUl li div.bannerImg { position:relative; overflow:hidden; padding:10px; } 
 .bannerUl li div.bannerImg:before { position:absolute; top:0; right:0; bottom:0; left:0; background:rgba(0,0,0,0); content:''; transition:all 0.4s; } 
 .bannerUl li:hover div.bannerImg:before { background:rgba(0,0,0,0.5); z-index:9; } 
 .bannerUl li div.bannerImg img { transition:all 0.4s; min-width: 100%; } 
